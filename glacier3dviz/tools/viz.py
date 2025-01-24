@@ -455,7 +455,7 @@ class Glacier3DViz:
                     **self.add_mesh_ice_thick_args_use)
 
         # add text showing the current time
-        self._add_time_text(pl, glacier_algo)
+        # self._add_time_text(pl, glacier_algo)
 
         # here we add potential additional features
         if self.additional_annotations_use is not None:
@@ -510,7 +510,7 @@ class Glacier3DViz:
             glacier_algo.time_step = change["new"]
             glacier_algo.update()
             # add text showing the current time
-            self._add_time_text(plotter, glacier_algo)
+            # self._add_time_text(plotter, glacier_algo)
 
             plotter.update()
 
@@ -569,7 +569,7 @@ class Glacier3DViz:
         self.glacier_algo.update()
 
         # add text showing the current time
-        self._add_time_text(self.plotter, self.glacier_algo)
+        # self._add_time_text(self.plotter, self.glacier_algo)
 
         if camera_position_per_step:
             self.plotter.camera.position = camera_position_per_step[step]
